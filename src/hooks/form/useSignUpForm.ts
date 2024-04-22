@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 import { useForm, UseFormReturn } from "react-hook-form";
 import { z } from "zod";
-import { FormSchema } from "@/app/(layout)/(root)/util/formUtil";
+import { FormSchema } from "@/app/(layout)/(root)/_util/formUtil";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   SIGN_UP_EMAIL,
