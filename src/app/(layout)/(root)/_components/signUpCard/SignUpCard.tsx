@@ -15,7 +15,7 @@ import SignUpFormField from "../sigUpFormField";
 import SignUpButtonGroup from "../signUpButtongroup";
 import "react-toastify/dist/ReactToastify.css";
 import CustomToastContainer from "@/components/toastUi/CustomToastContainer";
-import useSignUpForm from "@/hooks/form";
+import useSignUpForm from "@/hooks/form/useSignUpForm";
 
 function SignUpCard() {
   const { form, handleOnClickNextStep, prevSlice, activeStep } =
