@@ -5,6 +5,8 @@
 
 ---
 ## 1일차 도구 익숙해지기(Nextjs로 Login Ui 및 유효성 검사)
+### 예시 사이트
+- [예시 링크](https://example.sparta-devcamp.com/)
 ### 사용 Framework / Library
 - Next.js
 - Shadcn/ui - React 컴포넌트 라이브러리

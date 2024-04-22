@@ -1,3 +1,5 @@
+"use client";
+
 import { useCallback, useState } from "react";
 import { useForm, UseFormReturn } from "react-hook-form";
 import { z } from "zod";
