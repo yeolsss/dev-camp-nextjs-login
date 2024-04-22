@@ -14,12 +14,12 @@ import {
 import SignUpFormField from "../sigUpFormField";
 import SignUpButtonGroup from "../signUpButtongroup";
 import "react-toastify/dist/ReactToastify.css";
-import UseSignUpForm from "@/hooks/form/useSignUpForm";
 import CustomToastContainer from "@/components/toastUi/CustomToastContainer";
+import useSignUpForm from "@/hooks/form";
 
 function SignUpCard() {
   const { form, handleOnClickNextStep, prevSlice, activeStep } =
-    UseSignUpForm();
+    useSignUpForm();
 
   return (
     <>

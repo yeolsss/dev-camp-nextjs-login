@@ -22,7 +22,7 @@ interface ReturnType {
   activeStep: number;
 }
 
-const UseSignUpForm = (): ReturnType => {
+const useSignUpForm = (): ReturnType => {
   const [activeStep, setActiveStep] = useState<number>(0);
   const totalSlides = 2;
 
@@ -95,4 +95,4 @@ const UseSignUpForm = (): ReturnType => {
   return { form, handleOnClickNextStep, prevSlice, activeStep };
 };
 
-export default UseSignUpForm;
+export default useSignUpForm;
