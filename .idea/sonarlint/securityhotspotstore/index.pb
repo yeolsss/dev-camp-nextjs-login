@@ -94,3 +94,33 @@ J
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+k
+;src/app/(layout)/(root)/_components/sigUpFormField/index.ts,c/7/c7234e4176c9ccde47ad241105b76a68ac73733b
+v
+Fsrc/app/(layout)/(root)/_components/sigUpFormField/SignUpFormField.tsx,7/4/7476b57cbdc45630c41359cf67bbc8030307ddd5
+e
+5src/app/(layout)/(root)/_constants/signUpConstants.ts,1/f/1f5a7531fb20de2ca5861016d68763c1ea424aac
+m
+=src/app/(layout)/(root)/_components/signUpCard/SignUpCard.tsx,1/d/1d9eb0a1b522366de14751e7e3fcc48cbea4aca8
+y
+Isrc/app/(layout)/(root)/_components/signUpButtongroup/SignButtonGroup.tsx,7/0/70827b11210a7b0c1e55f858c7d630a4fb3fe625
+{
+Ksrc/app/(layout)/(root)/_components/signUpButtongroup/SignUpButtonGroup.tsx,7/7/771e155f3061013c7b8482e6b65ba41bb802a6e5
+g
+7src/app/(layout)/(root)/_components/signUpCard/index.ts,b/6/b6d649f99641d4876c4db97e8eb6cde3b7d0f069
+n
+>src/app/(layout)/(root)/_components/signUpButtongroup/index.ts,3/5/358db70c55adfeaefb4c726fb6fcb16418a99d3f
+o
+?src/app/(layout)/(root)/_components/header/SignUpCardHeader.tsx,3/d/3d33d1fe73948870541f49a20eb726d4e7a65c14
+P
+ src/hooks/form/useSignUpForm.tsx,4/4/4426a9aa3a0c0d4a8c5ae3ca95a5ead9db4590fa
+O
+src/hooks/form/useSignUpForm.ts,7/c/7c8f887694f4e8296663d5fad00a3699bdc43583
+{
+Ksrc/app/(layout)/(root)/_components/toastContainer/CustomToastContainer.tsx,2/d/2d296379a7e19321a1d5308d2dc92fbcbb507cb0
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
+_
+/src/components/toastUi/CustomToastContainer.tsx,9/b/9be0de44e1b999be81cae3f8f94be095a95ab942

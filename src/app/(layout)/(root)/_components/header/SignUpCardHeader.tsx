@@ -1,6 +1,6 @@
 import { CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-function SignInCardHeader() {
+function SignUpCardHeader() {
   return (
     <CardHeader>
       <CardTitle>계정을 생서합니다.</CardTitle>
@@ -9,4 +9,4 @@ function SignInCardHeader() {
   );
 }
 
-export default SignInCardHeader;
+export default SignUpCardHeader;

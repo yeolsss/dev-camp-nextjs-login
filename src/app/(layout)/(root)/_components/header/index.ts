@@ -1,1 +1,1 @@
-export { default } from "./SignInCardHeader";
+export { default } from "./SignUpCardHeader";

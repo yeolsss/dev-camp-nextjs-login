@@ -9,7 +9,7 @@ interface Props {
   prevHandler?: () => void;
 }
 
-function SignButtonGroup({ handler, currentStep, prevHandler }: Props) {
+function SignUpButtonGroup({ handler, currentStep, prevHandler }: Props) {
   return (
     <div className="mt-5 bottom-5">
       {currentStep === 0 ? (
@@ -30,4 +30,4 @@ function SignButtonGroup({ handler, currentStep, prevHandler }: Props) {
   );
 }
 
-export default SignButtonGroup;
+export default SignUpButtonGroup;

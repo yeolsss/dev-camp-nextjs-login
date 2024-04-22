@@ -9,9 +9,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import {
-  SIGN_IN_ROLE,
-  SignInInputConstants,
-} from "@/app/(layout)/(root)/_constants/signInConstants";
+  SIGN_UP_ROLE,
+  SignUpInputConstants,
+} from "@/app/(layout)/(root)/_constants/signUpConstants";
 import {
   Select,
   SelectContent,
@@ -21,11 +21,11 @@ import {
 } from "@/components/ui/select";
 
 interface Props {
-  id: SignInInputConstants;
+  id: SignUpInputConstants;
   inputType?: string;
 }
 
-function SignInFormField({ id, inputType = "text" }: Props) {
+function SignUpFormField({ id, inputType = "text" }: Props) {
   return (
     <FormField
       name={id.id}
@@ -33,7 +33,7 @@ function SignInFormField({ id, inputType = "text" }: Props) {
         <FormItem>
           <FormLabel>{id.label}</FormLabel>
           <FormControl>
-            {id.id != SIGN_IN_ROLE.id ? (
+            {id.id != SIGN_UP_ROLE.id ? (
               <Input type={inputType} placeholder={id.placeholder} {...field} />
             ) : (
               <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -54,4 +54,4 @@ function SignInFormField({ id, inputType = "text" }: Props) {
   );
 }
 
-export default SignInFormField;
+export default SignUpFormField;
