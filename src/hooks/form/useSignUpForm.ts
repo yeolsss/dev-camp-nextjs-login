@@ -13,7 +13,7 @@ import {
   SIGN_UP_PHONE,
   SIGN_UP_ROLE,
 } from "@/app/(layout)/(root)/_constants/signUpConstants";
-import { Bounce, toast } from "react-toastify";
+import { useToast } from "@/components/ui/use-toast";
 
 interface ReturnType {
   form: UseFormReturn<{ [p: string]: string }, any, undefined>;
@@ -23,6 +23,7 @@ interface ReturnType {
 }
 
 const useSignUpForm = (): ReturnType => {
+  const { toast } = useToast();
   const [activeStep, setActiveStep] = useState<number>(0);
   const totalSlides = 2;
 
@@ -38,23 +39,20 @@ const useSignUpForm = (): ReturnType => {
     },
   });
 
-  const handleOnSubmit = useCallback((data: z.infer<typeof FormSchema>) => {
-    if (data[SIGN_UP_PASSWORD.id] !== data[SIGN_UP_PASSWORD_CONFIRM.id]) {
-      toast.error("비밀번호가 맞지않습니다.", {
-        position: "bottom-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        transition: Bounce,
-      });
-      return;
-    }
-    alert(JSON.stringify(data));
-  }, []);
+  const handleOnSubmit = useCallback(
+    (data: z.infer<typeof FormSchema>) => {
+      if (data[SIGN_UP_PASSWORD.id] !== data[SIGN_UP_PASSWORD_CONFIRM.id]) {
+        toast({
+          title: "비밀번호가 일치하지 않습니다.",
+          variant: "destructive",
+          duration: 1000,
+        });
+        return;
+      }
+      alert(JSON.stringify(data, null, 4));
+    },
+    [toast],
+  );
 
   const handleOnClickNextStep = useCallback(async () => {
     let fieldsToValidate = [] as string[];
