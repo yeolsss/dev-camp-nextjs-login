@@ -3,7 +3,6 @@
 import { useCallback, useState } from "react";
 import { useForm, UseFormReturn } from "react-hook-form";
 import { z } from "zod";
-import { FormSchema } from "@/app/(layout)/(root)/_util/formUtil";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   SIGN_UP_EMAIL,
@@ -14,6 +13,7 @@ import {
   SIGN_UP_ROLE,
 } from "@/app/(layout)/(root)/_constants/signUpConstants";
 import { useToast } from "@/components/ui/use-toast";
+import { FormSchema } from "@/validators/auth";
 
 interface ReturnType {
   form: UseFormReturn<{ [p: string]: string }, any, undefined>;
